@@ -21,11 +21,9 @@ public partial class Product
 
     public string? Status { get; set; }
 
-    public string? Description { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     public string? Category { get; set; }
-
-    public DateTime? CreatedAt { get; set; }
 
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 

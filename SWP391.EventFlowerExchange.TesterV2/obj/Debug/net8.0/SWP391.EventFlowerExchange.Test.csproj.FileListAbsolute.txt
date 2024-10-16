@@ -1,6 +1,0 @@
-C:\Users\Admin\Desktop\SWT\SWP391.EventFlowerExchange.FA24\SWP391.EventFlowerExchange.TesterV2\bin\Debug\net8.0\CoverletSourceRootsMapping_SWP391.EventFlowerExchange.Test
-C:\Users\Admin\Desktop\SWT\SWP391.EventFlowerExchange.FA24\SWP391.EventFlowerExchange.TesterV2\obj\Debug\net8.0\SWP391.EventFlowerExchange.Test.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\SWT\SWP391.EventFlowerExchange.FA24\SWP391.EventFlowerExchange.TesterV2\obj\Debug\net8.0\SWP391.EventFlowerExchange.Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\Desktop\SWT\SWP391.EventFlowerExchange.FA24\SWP391.EventFlowerExchange.TesterV2\obj\Debug\net8.0\SWP391.EventFlowerExchange.Test.AssemblyInfoInputs.cache
-C:\Users\Admin\Desktop\SWT\SWP391.EventFlowerExchange.FA24\SWP391.EventFlowerExchange.TesterV2\obj\Debug\net8.0\SWP391.EventFlowerExchange.Test.AssemblyInfo.cs
-C:\Users\Admin\Desktop\SWT\SWP391.EventFlowerExchange.FA24\SWP391.EventFlowerExchange.TesterV2\obj\Debug\net8.0\SWP391.EventFlowerExchange.Test.csproj.CoreCompileInputs.cache

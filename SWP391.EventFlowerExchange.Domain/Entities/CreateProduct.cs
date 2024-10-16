@@ -16,6 +16,7 @@ namespace SWP391.EventFlowerExchange.Domain.Entities
         public string? ProductName { get; set; }
 
         [Required]
+
         public int? FreshnessDuration { get; set; }
 
         [Required]
@@ -35,7 +36,5 @@ namespace SWP391.EventFlowerExchange.Domain.Entities
 
         [Required]
         public DateTime? CreatedAt { get; set; }
-
-        public List<string>? ListImage { get; set; }
     }
 }

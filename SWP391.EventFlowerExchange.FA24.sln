@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWP391.EventFlowerExchange.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWP391.EventFlowerExchange.Application", "SWP391.EventFlowerExchange.Application\SWP391.EventFlowerExchange.Application.csproj", "{7AC51EFE-1F4D-4288-AAA1-66BB606B0B55}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWP391.EventFlowerExchange.Test", "SWP391.EventFlowerExchange.TesterV2\SWP391.EventFlowerExchange.Test.csproj", "{17A8C1EA-FDFC-41B0-94D9-09C77C17C651}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWP391.EventFlowerExchange.Test", "SWP391.EventFlowerExchange.Test\SWP391.EventFlowerExchange.Test.csproj", "{2DC5BDC4-4300-48A8-BFD7-6C585730B215}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{7AC51EFE-1F4D-4288-AAA1-66BB606B0B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AC51EFE-1F4D-4288-AAA1-66BB606B0B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AC51EFE-1F4D-4288-AAA1-66BB606B0B55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17A8C1EA-FDFC-41B0-94D9-09C77C17C651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17A8C1EA-FDFC-41B0-94D9-09C77C17C651}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17A8C1EA-FDFC-41B0-94D9-09C77C17C651}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17A8C1EA-FDFC-41B0-94D9-09C77C17C651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC5BDC4-4300-48A8-BFD7-6C585730B215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC5BDC4-4300-48A8-BFD7-6C585730B215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC5BDC4-4300-48A8-BFD7-6C585730B215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC5BDC4-4300-48A8-BFD7-6C585730B215}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

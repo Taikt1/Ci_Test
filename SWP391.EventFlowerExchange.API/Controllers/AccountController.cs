@@ -31,12 +31,12 @@ namespace SWP391.EventFlowerExchange.API.Controllers
             {
                 Email = model.Email
             };
-            if (await _service.GetUserByEmailFromAPIAsync(account) != null) 
+            if (await _service.GetUserByEmailFromAPIAsync(account) != null)
             {
                 return Ok("Email had been registered.");
             }
 
-            
+
             var result = await _service.SignUpBuyerFromAPIAsync(model);
             if (result.Succeeded)
             {
@@ -107,7 +107,6 @@ namespace SWP391.EventFlowerExchange.API.Controllers
                 {
                     Email = email,
                     Name = name,
-                    Balance = 0,
                     Password = "Abc123@"
                 };
                 await _service.SignUpBuyerFromAPIAsync(account);
@@ -124,7 +123,7 @@ namespace SWP391.EventFlowerExchange.API.Controllers
 
         [HttpPost("SendOTP")]
         [Authorize]
-        public async Task <ActionResult<bool>> SendOTPFromAPIAsync(string email)
+        public async Task<ActionResult<bool>> SendOTPFromAPIAsync(string email)
         {
             return await _service.SendOTPFromAPIAsync(email);
         }
@@ -240,7 +239,7 @@ namespace SWP391.EventFlowerExchange.API.Controllers
         }
 
         [HttpPut("UpdateAccount")]
-        [Authorize]
+        [Authorize(Roles = ApplicationRoles.Manager)]
         public async Task<ActionResult<bool>> UpdateAccountFromAPIAsync(Account account)
         {
             var user = await _service.GetUserByIdFromAPIAsync(new Account() { Id = account.Id });

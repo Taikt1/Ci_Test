@@ -177,12 +177,6 @@ namespace SWP391.EventFlowerExchange.Domain.Migrations
                     b.Property<string>("NormalizedUserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OtpCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("OtpExpiration")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
@@ -312,21 +306,6 @@ namespace SWP391.EventFlowerExchange.Domain.Migrations
                     b.ToTable("Delivery_Log", (string)null);
                 });
 
-            modelBuilder.Entity("SWP391.EventFlowerExchange.Domain.ObjectValues.ImageProduct", b =>
-                {
-                    b.Property<string>("LinkImage")
-                        .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int")
-                        .HasColumnName("product_id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ImageProduct", (string)null);
-                });
-
             modelBuilder.Entity("SWP391.EventFlowerExchange.Domain.ObjectValues.Notification", b =>
                 {
                     b.Property<int>("NotificationId")
@@ -450,9 +429,6 @@ namespace SWP391.EventFlowerExchange.Domain.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"));
 
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ComboType")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
@@ -461,9 +437,6 @@ namespace SWP391.EventFlowerExchange.Domain.Migrations
                     b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime")
                         .HasColumnName("created_at");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("FreshnessDuration")
                         .HasColumnType("int")
@@ -741,17 +714,6 @@ namespace SWP391.EventFlowerExchange.Domain.Migrations
                     b.Navigation("DeliveryPerson");
 
                     b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("SWP391.EventFlowerExchange.Domain.ObjectValues.ImageProduct", b =>
-                {
-                    b.HasOne("SWP391.EventFlowerExchange.Domain.ObjectValues.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .IsRequired()
-                        .HasConstraintName("FK__ImageProd__produ__2B0A656D");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("SWP391.EventFlowerExchange.Domain.ObjectValues.Notification", b =>

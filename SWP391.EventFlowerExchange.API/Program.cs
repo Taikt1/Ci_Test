@@ -34,8 +34,10 @@ namespace SWP391.EventFlowerExchange.API
             builder.Services.AddCors(p => p.AddPolicy("MyCors", build =>
             {
                 //Cho tat ca
-                build.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-               
+                build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+
+                //Gioi han mien
+                //build.WithOrigins("https://hienlth.info", "https://localhost:3000");
             }));
 
             //Add SwaggerGen
@@ -78,9 +80,14 @@ namespace SWP391.EventFlowerExchange.API
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IProductService, ProductService>();
-            builder.Services.AddSingleton<IVnPayService, VnPayService>();
-            builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
-            builder.Services.AddScoped<ITransactionService, TransactionService>();
+            builder.Services.AddScoped<ICartRepository, CartRepository>();
+            builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IRatingService, RatingService>();
+            builder.Services.AddScoped<IRatingRepository, RatingRepository>();
+            builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+            builder.Services.AddScoped<INotificationService, NotificationService>();
+            builder.Services.AddScoped<IFollowService, FollowService>();
+            builder.Services.AddScoped<IFollowRepository, FollowRepository>();
 
             // Add DbContext
             builder.Services.AddDbContext<Swp391eventFlowerExchangePlatformContext>(options =>
